@@ -4,7 +4,7 @@ int main(int argc, char* args[])
 {
 /*INICIALIZAÇÃO*/
 SDL_Init((SDL_INIT EVERYTHING);
-SDL_Window* win = SDI_CreateWindow("Mosaico Multicolorido!"),
+SDL_Window* win = SDI_CreateWindow("Tela Retangular!"),
                       SDL_WINDOWPOS_UNDEFINED,
                       SDL_WINDOWPOS_UNDEFINED,
                       200, 100, SDL_WINDOW_SHOWN
