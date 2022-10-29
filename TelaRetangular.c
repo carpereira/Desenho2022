@@ -3,8 +3,8 @@
 int main(int argc, char* args[])
 {
 /*INICIALIZAÇÃO*/
-SDL_Init((SDL_INIT EVERYTHING);
-SDL_Window* win = SDI_CreateWindow("Tela Retangular!"),
+SDL_Init((SDL_INIT_EVERYTHING);
+SDL_Window* win = SDL_CreateWindow("Tela Retangular!"),
                       SDL_WINDOWPOS_UNDEFINED,
                       SDL_WINDOWPOS_UNDEFINED,
                       200, 100, SDL_WINDOW_SHOWN
@@ -20,8 +20,8 @@ SDL_RenderFillRect(ren, &r);
 SDL_RenderPresent(ren);
 SDL_Delay(5000);
 
-/*FINALIZÇÃO*/
+/*FINALIZAÇÃO*/
 SDL_DestroyRenderer(ren);
 SDL_DestryWindow(win);
-SDL_Quit;
+SDL_Quit();
 }
