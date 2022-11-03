@@ -3,13 +3,13 @@
 int main(int argc, char* args[])
 {
 /*INICIALIZAÇÃO*/
-SDL_Init((SDL_INIT_EVERYTHING);
+SDL_Init(SDL_INIT_EVERYTHING);
 SDL_Window* win = SDL_CreateWindow("Tela Retangular!"),
                       SDL_WINDOWPOS_UNDEFINED,
                       SDL_WINDOWPOS_UNDEFINED,
                       200, 100, SDL_WINDOW_SHOWN
                       );
-SDL_Renderer* ren = SDL_CreatRenderer(win, -1,0);
+SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
 
 /*EXECUÇÃO*/
 SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
@@ -22,6 +22,6 @@ SDL_Delay(5000);
 
 /*FINALIZAÇÃO*/
 SDL_DestroyRenderer(ren);
-SDL_DestryWindow(win);
+SDL_DestroyWindow(win);
 SDL_Quit();
 }
